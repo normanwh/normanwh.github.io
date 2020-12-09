@@ -23,19 +23,21 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="劣币驱逐良币">
-<meta property="og:type" content="website">
-<meta property="og:title" content="whisper zone">
-<meta property="og:url" content="http://example.com/archives/2020/index.html">
+<meta name="description" content="第一章 绪论 1.数据 数据元素 数据项 数据类型 数据对象  数据结构 抽象数据类型 2.内存相当于抽屉，数据结构相当于抽屉的格子，算法相当于取出抽屉内容的方法 3.时间复杂度：T与问题规模n的函数，看循环里面的语句 4.空间复杂度: S与问题规模n的函数，看数据的定义，主要是数组函数调用以及递归 5.逻辑结构分为线性，树状，网状。 6.存储结构分为顺序，链式存储，散列存储（关键字哈希算法） 7">
+<meta property="og:type" content="article">
+<meta property="og:title" content="c and data-struct review">
+<meta property="og:url" content="http://example.com/2020/12/09/3/index.html">
 <meta property="og:site_name" content="whisper zone">
-<meta property="og:description" content="劣币驱逐良币">
+<meta property="og:description" content="第一章 绪论 1.数据 数据元素 数据项 数据类型 数据对象  数据结构 抽象数据类型 2.内存相当于抽屉，数据结构相当于抽屉的格子，算法相当于取出抽屉内容的方法 3.时间复杂度：T与问题规模n的函数，看循环里面的语句 4.空间复杂度: S与问题规模n的函数，看数据的定义，主要是数组函数调用以及递归 5.逻辑结构分为线性，树状，网状。 6.存储结构分为顺序，链式存储，散列存储（关键字哈希算法） 7">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-09T04:53:49.817Z">
+<meta property="article:modified_time" content="2020-12-09T06:44:57.638Z">
 <meta property="article:author" content="Rosa Moore">
-<meta property="article:tag" content="阅读 反馈">
+<meta property="article:tag" content="计算机基础">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/2020/">
+<link rel="canonical" href="http://example.com/2020/12/09/3/">
 
 
 <script class="page-configurations">
@@ -43,11 +45,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>归档 | whisper zone</title>
+<title>c and data-struct review | whisper zone</title>
   
 
   <script>
@@ -178,7 +180,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -191,6 +193,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%BB%AA%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">第一章 绪论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="nav-number">2.</span> <span class="nav-text">第二章 线性表</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -241,109 +244,125 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 4 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/09/3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.png">
+      <meta itemprop="name" content="Rosa Moore">
+      <meta itemprop="description" content="劣币驱逐良币">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whisper zone">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          c and data-struct review
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+
+      <time title="创建时间：2020-12-09 12:53:49 / 修改时间：14:44:57" itemprop="dateCreated datePublished" datetime="2020-12-09T12:53:49+08:00">2020-12-09</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a><strong>第一章 绪论</strong></h3><ul>
+<li>1.数据 数据元素 数据项 数据类型 数据对象  数据结构 抽象数据类型</li>
+<li>2.内存相当于抽屉，数据结构相当于抽屉的格子，算法相当于取出抽屉内容的方法</li>
+<li>3.时间复杂度：T与问题规模n的函数，看循环里面的语句</li>
+<li>4.空间复杂度: S与问题规模n的函数，看数据的定义，主要是数组函数调用以及递归</li>
+<li>5.逻辑结构分为线性，树状，网状。</li>
+<li>6.存储结构分为顺序，链式存储，散列存储（关键字哈希算法）</li>
+<li>7.算法 高效（低存储量速度快），有穷（算法有穷，程序可以无穷），健壮（例如catch if）</li>
+</ul>
+<hr>
+<h3 id="第二章-线性表"><a href="#第二章-线性表" class="headerlink" title="第二章 线性表"></a><strong>第二章 线性表</strong></h3><ul>
+<li>1.线性表的逻辑结构：除第一个元素外都有唯一前驱，除最后一个元素外都有唯一后继。</li>
+<li>2.线性表的存储结构，顺序表与链表</li>
+<li>3.线性表的创建，增删查改</li>
+<li>4.顺序表：逻辑上相邻，物理上也相邻。首地址。查找方便。</li>
+<li><blockquote>
+<p>静态创建线性表 把元素放到数组里，创建以后长度固定</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>malloc(elemtype),动态创建线性表</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>查找根据首地址，时间复杂度o(1)</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>插入，先查找要插入的位置，元素往后移动一位；头部插入时间复杂度o(n),尾部插入o(n)<br>平均o(n)</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>删除，查找，用e返回被删除的元素，线性表元素往前移动</p>
+</blockquote>
+</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-09T14:19:09+08:00"
-              content="2020-12-09">
-          12-09
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/09/4/" itemprop="url">
-            <span itemprop="name">4</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" rel="tag"># 计算机基础</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/12/08/2/" rel="prev" title="数学查漏补缺">
+                  <i class="fa fa-chevron-left"></i> 数学查漏补缺
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/12/09/4/" rel="next" title="4">
+                  4 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-09T12:53:49+08:00"
-              content="2020-12-09">
-          12-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/09/3/" itemprop="url">
-            <span itemprop="name">c and data-struct review</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-08T13:31:45+08:00"
-              content="2020-12-08">
-          12-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/08/2/" itemprop="url">
-            <span itemprop="name">数学查漏补缺</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-11-29T13:00:32+08:00"
-              content="2020-11-29">
-          11-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/11/29/1/" itemprop="url">
-            <span itemprop="name">First touch</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 
 <script>

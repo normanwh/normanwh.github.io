@@ -23,19 +23,21 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="劣币驱逐良币">
-<meta property="og:type" content="website">
-<meta property="og:title" content="whisper zone">
-<meta property="og:url" content="http://example.com/archives/2020/index.html">
+<meta name="description" content="日期：20201202 1.函数性态（待强化了解） 2.有界与单调函数 原函数 导数 之间的关系 3.极限的保号性和保序性&#x3D;&#x3D;带不带&#x3D;号&#x3D;&#x3D;的细微差别 4.无穷大量与无界变量的关系  练习巩固  讲义256 330中200 6套卷132 真题253   日期：20201203 1.等价无穷小替换  123456x-sinx&#x3D;1&#x2F;6x^3arcsin-x&#x3D;1&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学查漏补缺">
+<meta property="og:url" content="http://example.com/2020/12/08/2/index.html">
 <meta property="og:site_name" content="whisper zone">
-<meta property="og:description" content="劣币驱逐良币">
+<meta property="og:description" content="日期：20201202 1.函数性态（待强化了解） 2.有界与单调函数 原函数 导数 之间的关系 3.极限的保号性和保序性&#x3D;&#x3D;带不带&#x3D;号&#x3D;&#x3D;的细微差别 4.无穷大量与无界变量的关系  练习巩固  讲义256 330中200 6套卷132 真题253   日期：20201203 1.等价无穷小替换  123456x-sinx&#x3D;1&#x2F;6x^3arcsin-x&#x3D;1&#x2F;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-08T05:31:45.680Z">
+<meta property="article:modified_time" content="2020-12-09T06:45:07.922Z">
 <meta property="article:author" content="Rosa Moore">
-<meta property="article:tag" content="阅读 反馈">
+<meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/2020/">
+<link rel="canonical" href="http://example.com/2020/12/08/2/">
 
 
 <script class="page-configurations">
@@ -43,11 +45,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>归档 | whisper zone</title>
+<title>数学查漏补缺 | whisper zone</title>
   
 
   <script>
@@ -178,7 +180,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -191,6 +193,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%EF%BC%9A20201202"><span class="nav-number">1.</span> <span class="nav-text">日期：20201202</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%EF%BC%9A20201203"><span class="nav-number">2.</span> <span class="nav-text">日期：20201203</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%EF%BC%9A20201204"><span class="nav-number">3.</span> <span class="nav-text">日期：20201204</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%EF%BC%9A20201205"><span class="nav-number">4.</span> <span class="nav-text">日期：20201205</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%EF%BC%9A20201206"><span class="nav-number">5.</span> <span class="nav-text">日期：20201206</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%EF%BC%9A20201209"><span class="nav-number">6.</span> <span class="nav-text">日期：20201209</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -241,109 +244,144 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 4 篇日志。 继续努力。</span>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/08/2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.png">
+      <meta itemprop="name" content="Rosa Moore">
+      <meta itemprop="description" content="劣币驱逐良币">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whisper zone">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数学查漏补缺
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-12-08 13:31:45" itemprop="dateCreated datePublished" datetime="2020-12-08T13:31:45+08:00">2020-12-08</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-09 14:45:07" itemprop="dateModified" datetime="2020-12-09T14:45:07+08:00">2020-12-09</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="日期：20201202"><a href="#日期：20201202" class="headerlink" title="日期：20201202"></a><strong>日期：20201202</strong></h3><ul>
+<li>1.函数性态（待强化了解）</li>
+<li>2.有界与单调<br>函数 原函数 导数 之间的关系</li>
+<li>3.极限的保号性和保序性==带不带=号==的细微差别</li>
+<li>4.无穷大量与无界变量的关系</li>
+</ul>
+<p>练习巩固</p>
+<ul>
+<li>讲义256</li>
+<li>330中200</li>
+<li>6套卷132</li>
+<li>真题253</li>
+</ul>
+<hr>
+<h3 id="日期：20201203"><a href="#日期：20201203" class="headerlink" title="日期：20201203"></a><strong>日期：20201203</strong></h3><ul>
+<li>1.等价无穷小替换</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x-sinx&#x3D;1&#x2F;6x^3</span><br><span class="line"></span><br><span class="line">arcsin-x&#x3D;1&#x2F;6x^3</span><br><span class="line"></span><br><span class="line">x-ln(1+x)&#x3D;1&#x2F;2x^2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>还有两个可以由前两个推出</p>
+<ul>
+<li>2.等价无穷小替换原则2</li>
+</ul>
+<blockquote>
+<p>330 p5第5题，p97第192题泰勒公式<br>递推关系定义的数列极限</p>
+</blockquote>
+<hr>
+<h3 id="日期：20201204"><a href="#日期：20201204" class="headerlink" title="日期：20201204"></a><strong>日期：20201204</strong></h3><ul>
+<li>1.递推关系定义的函数单调减为什么数列<br>不具有单调性？</li>
+<li>2.第一章讲了5.5节课</li>
+</ul>
+<hr>
+<h3 id="日期：20201205"><a href="#日期：20201205" class="headerlink" title="日期：20201205"></a><strong>日期：20201205</strong></h3><ul>
+<li>1.间断点及其分类</li>
+<li>2.p44-p45零点定理，介值定理06</li>
+<li>2.指针，二级指针，数组指针，函数指针</li>
+<li>3.不带头结点的头插法尾插法，有序插入</li>
+</ul>
+<hr>
+<h3 id="日期：20201206"><a href="#日期：20201206" class="headerlink" title="日期：20201206"></a><strong>日期：20201206</strong></h3><ul>
+<li>1.公式法和泰勒展开求n阶导数</li>
+</ul>
+<hr>
+<h3 id="日期：20201209"><a href="#日期：20201209" class="headerlink" title="日期：20201209"></a><strong>日期：20201209</strong></h3><ul>
+<li><strong>第二节导数应用</strong></li>
+<li>题型三 方程根的存在性及个数</li>
+<li>a:存在性证明（1；零点定理 2； 罗尔定理）</li>
+<li>b:根的个数（1；单调性 2；罗尔定理推论  区间I<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f^n(x)!&#x3D;0</span><br></pre></td></tr></table></figure>
+则方程f(x)=0在I上最多n个实根）</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-09T14:19:09+08:00"
-              content="2020-12-09">
-          12-09
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/09/4/" itemprop="url">
-            <span itemprop="name">4</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/11/29/1/" rel="prev" title="First touch">
+                  <i class="fa fa-chevron-left"></i> First touch
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/12/09/3/" rel="next" title="c and data-struct review">
+                  c and data-struct review <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-09T12:53:49+08:00"
-              content="2020-12-09">
-          12-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/09/3/" itemprop="url">
-            <span itemprop="name">c and data-struct review</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-12-08T13:31:45+08:00"
-              content="2020-12-08">
-          12-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/08/2/" itemprop="url">
-            <span itemprop="name">数学查漏补缺</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-11-29T13:00:32+08:00"
-              content="2020-11-29">
-          11-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/11/29/1/" itemprop="url">
-            <span itemprop="name">First touch</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 
 <script>

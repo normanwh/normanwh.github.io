@@ -143,7 +143,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">0</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -153,7 +153,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">2</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-search">
@@ -206,9 +206,15 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -283,6 +289,225 @@
     
     <div class="post-body" itemprop="articleBody">
           
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/09/3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.png">
+      <meta itemprop="name" content="Rosa Moore">
+      <meta itemprop="description" content="劣币驱逐良币">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whisper zone">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/12/09/3/" class="post-title-link" itemprop="url">c and data-struct review</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2020-12-09 12:53:49 / 修改时间：14:44:57" itemprop="dateCreated datePublished" datetime="2020-12-09T12:53:49+08:00">2020-12-09</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a><strong>第一章 绪论</strong></h3><ul>
+<li>1.数据 数据元素 数据项 数据类型 数据对象  数据结构 抽象数据类型</li>
+<li>2.内存相当于抽屉，数据结构相当于抽屉的格子，算法相当于取出抽屉内容的方法</li>
+<li>3.时间复杂度：T与问题规模n的函数，看循环里面的语句</li>
+<li>4.空间复杂度: S与问题规模n的函数，看数据的定义，主要是数组函数调用以及递归</li>
+<li>5.逻辑结构分为线性，树状，网状。</li>
+<li>6.存储结构分为顺序，链式存储，散列存储（关键字哈希算法）</li>
+<li>7.算法 高效（低存储量速度快），有穷（算法有穷，程序可以无穷），健壮（例如catch if）</li>
+</ul>
+<hr>
+<h3 id="第二章-线性表"><a href="#第二章-线性表" class="headerlink" title="第二章 线性表"></a><strong>第二章 线性表</strong></h3><ul>
+<li>1.线性表的逻辑结构：除第一个元素外都有唯一前驱，除最后一个元素外都有唯一后继。</li>
+<li>2.线性表的存储结构，顺序表与链表</li>
+<li>3.线性表的创建，增删查改</li>
+<li>4.顺序表：逻辑上相邻，物理上也相邻。首地址。查找方便。</li>
+<li><blockquote>
+<p>静态创建线性表 把元素放到数组里，创建以后长度固定</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>malloc(elemtype),动态创建线性表</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>查找根据首地址，时间复杂度o(1)</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>插入，先查找要插入的位置，元素往后移动一位；头部插入时间复杂度o(n),尾部插入o(n)<br>平均o(n)</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>删除，查找，用e返回被删除的元素，线性表元素往前移动</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/08/2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.png">
+      <meta itemprop="name" content="Rosa Moore">
+      <meta itemprop="description" content="劣币驱逐良币">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whisper zone">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/12/08/2/" class="post-title-link" itemprop="url">数学查漏补缺</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-12-08 13:31:45" itemprop="dateCreated datePublished" datetime="2020-12-08T13:31:45+08:00">2020-12-08</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-09 14:45:07" itemprop="dateModified" datetime="2020-12-09T14:45:07+08:00">2020-12-09</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="日期：20201202"><a href="#日期：20201202" class="headerlink" title="日期：20201202"></a><strong>日期：20201202</strong></h3><ul>
+<li>1.函数性态（待强化了解）</li>
+<li>2.有界与单调<br>函数 原函数 导数 之间的关系</li>
+<li>3.极限的保号性和保序性==带不带=号==的细微差别</li>
+<li>4.无穷大量与无界变量的关系</li>
+</ul>
+<p>练习巩固</p>
+<ul>
+<li>讲义256</li>
+<li>330中200</li>
+<li>6套卷132</li>
+<li>真题253</li>
+</ul>
+<hr>
+<h3 id="日期：20201203"><a href="#日期：20201203" class="headerlink" title="日期：20201203"></a><strong>日期：20201203</strong></h3><ul>
+<li>1.等价无穷小替换</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x-sinx&#x3D;1&#x2F;6x^3</span><br><span class="line"></span><br><span class="line">arcsin-x&#x3D;1&#x2F;6x^3</span><br><span class="line"></span><br><span class="line">x-ln(1+x)&#x3D;1&#x2F;2x^2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>还有两个可以由前两个推出</p>
+<ul>
+<li>2.等价无穷小替换原则2</li>
+</ul>
+<blockquote>
+<p>330 p5第5题，p97第192题泰勒公式<br>递推关系定义的数列极限</p>
+</blockquote>
+<hr>
+<h3 id="日期：20201204"><a href="#日期：20201204" class="headerlink" title="日期：20201204"></a><strong>日期：20201204</strong></h3><ul>
+<li>1.递推关系定义的函数单调减为什么数列<br>不具有单调性？</li>
+<li>2.第一章讲了5.5节课</li>
+</ul>
+<hr>
+<h3 id="日期：20201205"><a href="#日期：20201205" class="headerlink" title="日期：20201205"></a><strong>日期：20201205</strong></h3><ul>
+<li>1.间断点及其分类</li>
+<li>2.p44-p45零点定理，介值定理06</li>
+<li>2.指针，二级指针，数组指针，函数指针</li>
+<li>3.不带头结点的头插法尾插法，有序插入</li>
+</ul>
+<hr>
+<h3 id="日期：20201206"><a href="#日期：20201206" class="headerlink" title="日期：20201206"></a><strong>日期：20201206</strong></h3><ul>
+<li>1.公式法和泰勒展开求n阶导数</li>
+</ul>
+<hr>
+<h3 id="日期：20201209"><a href="#日期：20201209" class="headerlink" title="日期：20201209"></a><strong>日期：20201209</strong></h3><ul>
+<li><strong>第二节导数应用</strong></li>
+<li>题型三 方程根的存在性及个数</li>
+<li>a:存在性证明（1；零点定理 2； 罗尔定理）</li>
+<li>b:根的个数（1；单调性 2；罗尔定理推论  区间I<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f^n(x)!&#x3D;0</span><br></pre></td></tr></table></figure>
+则方程f(x)=0在I上最多n个实根）</li>
+</ul>
+
       
     </div>
 
