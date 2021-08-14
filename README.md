@@ -1,0 +1,2 @@
+- [whisper zone]（normanwh.github.io）
+- my private static html blog
